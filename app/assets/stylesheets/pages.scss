@@ -1,0 +1,46 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbotron-extend {
+    padding-top: 0;
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+    background: url("hiyari.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+h1.title {
+    color: red;
+    font-family: "Hannari", 'Eater', cursive;
+}
+
+p.title-sub {
+    font-size: 20px;
+    margin: 50px;
+
+}
+
+.title-section {
+    text-align: center;
+}
+
+footer p {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    margin-bottom: 0;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn-controll {
+    font-weight: bold;
+    margin: 30px;
+    padding: 15px 30px 15px 30px;
+}

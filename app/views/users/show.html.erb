@@ -1,0 +1,24 @@
+<div class="container">
+<section class="mypage-body">
+    <% if current_user.id == params[:id].to_i %>
+    <h1>ヒヤリとしましたか？<br>おかえりなさい、<%= @user.name %>さん</h1>
+    <p>マイページです。これから実装していきます。</p>
+    <div class="profile">
+        <%= "#{@user.gender}、#{@user.age}歳 #{@user.job}をしています。" %>
+    </div>
+    <div class="edit-link">
+        <%= link_to("編集", edit_user_registration_path(@user)) %>
+    </div>
+    <% else %>
+    <h1>ヒヤラー情報</h1>
+    <p><%= "#{@user.name}さんは、ヒヤラー第#{@user.id}人目です" %></p>
+    <p><%= "#{@user.name}さんの過去の投稿はこちら" %></p>
+    <% @posts.each do |post| %>
+    <div>
+    <%= link_to("#{post.title}", post_path(post)) %>
+    </div>
+    <% end %>
+
+    <% end %>
+</section>
+</div>

@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+    <h2>新規登録</h2>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render 'partial/deviseErrorMsg' %>
+      <div class="form-group">
+        <%= f.label :name, "ユーザーネーム" %><br />
+        <%= f.text_field :name, autofocus: true, class: "form-control" %>
+      </div>
+    
+      <div class="form-group">
+        <%= f.label :email, "メールアドレス" %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :age, "年齢" %><br />
+        <%= f.number_field :age, autofocus: true, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :job, "職業" %><br />
+        <%= f.text_field :job, autofocus: true, class: "form-control" %>
+      </div>
+
+      <div class="form-group">
+      <p style="font-weight:bold;">性別</p>
+      <div class="form-check form-check-inline">
+        <%= f.radio_button(:gender, "男性") %>
+        <%= f.label(:gender, "男性") %>
+        <%= f.radio_button(:gender, "女性") %>
+        <%= f.label(:gender, "女性") %>
+      </div>
+      </div>
+    
+      <div class="form-group">
+        <%= f.label :password, "パスワード(6文字以上)" %>
+        <% if @minimum_password_length %>
+        
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "off", class: "form-control" %>
+      </div>
+    
+      <div class="form-group">
+        <%= f.label :password_confirmation, "パスワードの確認" %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+      </div>
+    
+      <div class="actions">
+        <%= f.submit "ヒヤラーになる", class: "btn btn-success" %>
+      </div>
+    <% end %>
+    
+    <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>
+

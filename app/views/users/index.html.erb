@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>全てのヒヤラー達は、<%= @users.count %>人です。</h1>
+  
+  <ul class="users">
+    <% @users.each do |user| %>
+      <li>
+        <%= link_to user.name, user %>
+      </li>
+    <% end %>
+  </ul>
+</div>

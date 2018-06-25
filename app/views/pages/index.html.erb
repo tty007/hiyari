@@ -1,0 +1,16 @@
+<div class="jumbotron jumbotron-extend">
+    <div class="container">
+        <section class="title-section display-4">
+            <h1 class="title">Hiyari<br>へようこそ</h1> 
+            <p class="title-sub">人生の中でヒヤリとする出来事は数多くあります。<br>あなたが体験した"ヒヤリ"を投稿してみませんか？</p> 
+        </section>
+        <% if !user_signed_in? %>
+        <section class="registration">
+            <div class="buttons">
+            <%= link_to("新規登録する", new_user_registration_path, class: "btn btn-default btn-controll") %>
+            <%= link_to("ログイン", new_user_session_path, class: "btn btn-default btn-controll") %>
+            </div>
+        </section>
+        <% end %>
+    </div>
+</div>
