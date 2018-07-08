@@ -7,7 +7,7 @@ class User < ApplicationRecord
   validates :name, presence: true
   validates :email, presence: true
 
-  has_many :posts
+  has_many :posts, :dependent => :destroy
 
   protected
   #パスワードなしでユーザ情報の編集を行えるようにオーバーライド

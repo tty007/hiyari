@@ -18,9 +18,9 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
     if @post.save
       flash[:notice] = "投稿が作成されました"
-      redirect_to edit_post_path(@post)
+      redirect_to post_path(@post)
     else
-      redirect_to new_post_path(@post)
+      render :new
     end
   end
 
@@ -30,16 +30,20 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find_by(id: params[:id])
-    @post.title = params[:title]
-    @post.content = params[:content]
-    @post.save
+    @post.update(post_params)
     redirect_to("/posts")
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to("/users/#{current_user.id}")
   end
 
   # ストロングパラメータを定義
   private
 
-  def post_params
-    params[:post].permit(:title, :content)
-  end
+    def post_params
+      params[:post].permit(:title, :content)
+    end
 end

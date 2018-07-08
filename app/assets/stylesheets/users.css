@@ -1,0 +1,82 @@
+.mypage {
+    padding-top: 100px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    min-height: 300px;
+    background: url("mypage.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.mypage-body {
+    text-align: center;
+}
+
+.user-index-title {
+    color: red;
+    font-family: "Hannari", 'Eater', cursive;
+    padding: 10px;
+    text-align: center;
+}
+
+.mypage-body p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.mypage-edit {
+    margin: 20px;
+}
+
+.login {
+    margin-top: 100px;
+    margin: 0 auto;
+}
+
+/* ユーザ一覧ページ */
+.all-users {
+    text-align: center;
+}
+
+.users-name li {
+    list-style: none;
+    color: white;
+    font-family: "Hannari", 'Eater', cursive;
+    margin: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 0.5px solid red;
+}
+
+.users-name li a {
+    text-decoration: none;
+}
+
+.users-name li a:hover {
+    opacity: 80%;
+    color: red;
+    transition-duration: 0.5s;
+}
+
+/* マイページ */
+h1.mypage-title {
+    font-family: "Hannari", 'Eater', cursive;
+    color: red;
+    margin-bottom: 50px;
+}
+
+.my-posts {
+    margin-bottom: 50px;
+    overflow: hodden;
+}
+
+h2.past {
+    font-family: "Hannari", 'Eater', cursive;
+    color: #d8d8d8;
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: 60%;
+}

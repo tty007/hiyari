@@ -1,3 +1,4 @@
+<div class="dark">
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3 text-center">
@@ -52,8 +53,14 @@
       </div>
     <% end %>
     
-    <%= render "devise/shared/links" %>
+    <%- if controller_name != 'sessions' %>
+      <div class="registrations-new-login">
+      <%= link_to "ログインする", new_session_path(resource_name) %><br />
+      </div>
+    <% end %>
+
     </div>
   </div>
+</div>
 </div>
 

@@ -1,3 +1,20 @@
-<h1>Hiyariへようこそ</h1>
-<p>Hiyariは、ひやりとした体験を投稿し、全国のヒヤラー(仮)と共有するサービスです。もちろん、暇つぶしにも使えます。</p>
+<div class="about-page">
+    <div class="container">
+        <h1 class="about-title">Hiyariへようこそ</h1>
+        <p class="about-description">Hiyariは、ひやりとした体験を投稿し、全国のヒヤラー(仮)と共有するサービスです。もちろん、暇つぶしにも使えます。</p>
+
+        <div class="about-subdescription">
+            <p>これまで生きてきて、ゾッとする程の恐怖体験を経験した方は多いはず。</p>
+            <p>世界には科学で説明しきれない現象も多く存在します。</p>
+            <p>あなたの体験談をお聞かせ下さい。</p>
+        </div>
+        <% if !user_signed_in? %>
+        <section class="registration">
+            <div class="buttons about-regist">
+            <%= link_to("新規登録する", new_user_registration_path, class: "btn btn-default btn-controll") %>
+            </div>
+        </section>
+        <% end %>
+    </div>
+</div>
 

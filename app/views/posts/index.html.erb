@@ -1,13 +1,14 @@
+<div class="dark">
 <div class="container">
 	<h1>投稿一覧</h1>
-	<ul class="posts-index">
+	
 		<% @posts.each do |post| %>
-			<%= link_to("#{post.title}", post_path(post.id), class: "list-group-item list-group-item-info") %>
-			<%# <li class="list-group-item list-group-item-info">
-				<%= post.title %>
-			<%# <li> %>
+			<div id="contents">
+				<div class="item">
+					<%= link_to("#{post.title}", post_path(post.id)) %>
+				</div>
+			</div>
 		<% end %>
-	<ul>
+
 </div>
-
-
+</div>

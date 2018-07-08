@@ -1,0 +1,45 @@
+.item {
+    margin: 10px;
+    width: auto;
+    border: 1px solid #eee;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Hannari", 'Eater', cursive;
+}
+
+.item a {
+    display: inline-block;
+    padding: 50px 20px;
+    text-decoration: none;
+}
+
+.item a:hover {
+    background: url("blad.gif");
+    /* transition-property: background; */
+    /* transition-duration:0.5s;
+    transition-timing-function:ease-in-out; */
+}
+
+/* 投稿詳細 */
+.post-title {
+    font-family: "Hannari", 'Eater', cursive;
+    color: azure;
+}
+
+.post-content {
+    text-align: center;
+}
+
+.post {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: "Hannari", 'Eater', cursive;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.edit-post-link {
+    margin: 50px;
+}

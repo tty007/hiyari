@@ -23,4 +23,66 @@ input.btn.btn-success {
 
 .navbar {
     margin-bottom: 0;
+    display: block;
+    width: 100vw;
+    
+}
+
+.registrations-new-login {
+    margin: 10px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.navbar-default {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: black;
+}
+
+.navbar .navbar-right li a{
+    color: #fff;
+    font-family: "Hannari", 'Eater', cursive;
+}
+
+.navbar .navbar-brand {
+    color: red;
+    font-family: "Hannari", 'Eater', cursive;
+}
+
+.container-fluid {
+    background-color: rgba(87, 58, 58, 0.363);
+}
+
+.container {
+    padding-top: 100px;
+}
+
+.dark {
+    padding-top: 0;
+    position: relative;
+    min-height: 100vh !important;
+    height: auto;
+    min-height: 300px;
+    background: url("about.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.container {
+    padding-top: 100px;
+}
+
+// clearfix
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
 }
