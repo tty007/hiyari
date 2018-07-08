@@ -39,6 +39,10 @@
     text-align: center;
 }
 
+ul.users {
+    padding-left: 0;
+}
+
 .users-name li {
     list-style: none;
     color: white;
@@ -79,4 +83,10 @@ h2.past {
     padding-bottom: 10px;
     margin: 0 auto;
     width: 60%;
+}
+
+.user-info {
+    font-family: "Hannari", 'Eater', cursive;
+    color: red;
+    margin-bottom: 50px;
 }

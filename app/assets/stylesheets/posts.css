@@ -16,6 +16,7 @@
 
 .item a:hover {
     background: url("blad.gif");
+    background-position: center center;
     /* transition-property: background; */
     /* transition-duration:0.5s;
     transition-timing-function:ease-in-out; */

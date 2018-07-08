@@ -17,9 +17,11 @@
             <% end %>
         </div>
     <% else %>
-        <h1>ヒヤラー情報</h1>
-        <p><%= "#{@user.name}さんは、ヒヤラー第#{@user.id}人目です" %></p>
-        <p><%= "#{@user.name}さんの過去の投稿はこちら" %></p>
+        <div class="hiyara">
+            <h1 class="user-info">ヒヤラー情報</h1>
+            <p><%= "#{@user.name}は、ヒヤラー第#{@user.id}人目です" %></p>
+            <p><%= "#{@user.name}の過去の投稿はこちら" %></p>
+        </div>
         <% @posts.each do |post| %>
             <div class="container">
                 <div class="item">

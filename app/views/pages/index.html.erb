@@ -5,12 +5,19 @@
             <p class="title-sub">人生の中でヒヤリとする出来事は数多くあります。<br>あなたが体験した"ヒヤリ"を投稿してみませんか？</p> 
         </section>
         <% if !user_signed_in? %>
-        <section class="registration">
-            <div class="buttons">
-            <%= link_to("新規登録する", new_user_registration_path, class: "btn btn-default btn-controll") %>
-            <%= link_to("ログイン", new_user_session_path, class: "btn btn-default btn-controll") %>
-            </div>
-        </section>
+            <section class="registration">
+                <div class="buttons">
+                <%= link_to("新規登録する", new_user_registration_path, class: "btn btn-default btn-controll") %>
+                <%= link_to("ログイン", new_user_session_path, class: "btn btn-default btn-controll") %>
+                </div>
+            </section>
+        <% else %>
+            <section class="registration">
+                <div class="buttons">
+                <%= link_to("新規投稿する", new_post_path, class: "btn btn-default btn-controll") %>
+                <%= link_to("投稿一覧へ", posts_path, class: "btn btn-default btn-controll") %>
+                </div>
+            </section>
         <% end %>
     </div>
 </div>

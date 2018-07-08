@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    /* スマホデザイン */
+    /* ホーム */
+
+    /* マイページ */
+    .mypage-title {
+        font-size: 25px;
+    }
+
+    /* ヒヤラー一覧 */
+    .user-index-title {
+        font-size: 25px;
+    }
+}
