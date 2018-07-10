@@ -19,6 +19,8 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'toastr-rails'
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 
 group :development, :test do

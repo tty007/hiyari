@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'users/index'
   get 'users/show'
+  get '/auth/:provider/callback' => 'sessions#create'
   devise_for :users
   resources :users, :only => [:index, :show]
   resources :posts
