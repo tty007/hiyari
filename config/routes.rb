@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'users/index'
   get 'users/show'
-  get '/auth/:provider' => 'sessions#create'
-  devise_for :users
+  devise_for :users, controlelrs: { omniauth_callbacks: 'users/omniauth_callbacks' }
   resources :users, :only => [:index, :show]
   resources :posts
 
