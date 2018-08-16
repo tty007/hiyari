@@ -9,7 +9,9 @@
                 <%= simple_format(h @post.content) %>
                 <br>
                 <% unless current_user == @post.user %>
-                    <div class="postinfo"><%= "投稿者：#{@post.user.name}, (#{@post.user.gender}, #{@post.user.age}), 職業：#{@post.user.job}" %></div>
+                    <div class="postinfo"><%= "投稿者：#{@post.user.name}, (#{@post.user.gender}, #{@post.user.age})" %>
+                    <br>
+                    <%= "職業：#{@post.user.job}" %></div>
                 <% end %>
             </div>
 
