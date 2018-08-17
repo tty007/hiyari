@@ -1,24 +1,8 @@
-# README
+#README
+Ruby on Railsで作成したホラーストーリー投稿型のWebアプリケーションです。
+サーバーにはherokuを用いて実際に稼働させています。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+url: https://hiyari-app.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+登録にはdeviseを用いて、投稿に必要な情報のカラムを手動で追加してます。
+基本的なCRUDを実装した簡易なアプリケーションです。
